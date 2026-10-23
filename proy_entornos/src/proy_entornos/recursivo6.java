@@ -2,18 +2,22 @@ package proy_entornos;
 
 public class recursivo6 {
 
-	public static boolean orden(String palabra) {
-		if (palabra.length()<=1) {
+	public static boolean orden(String cadena, char letra) {
+		if (cadena.length() == 0) {
 			return true;
-		}
-		if (palabra.charAt(0)>palabra.charAt(1)) {
+		} else if (cadena.charAt(0) < letra) {
 			return false;
+		} else {
+			if (letra < cadena.charAt(0)) {
+				letra = cadena.charAt(0);
+			}
+			return orden(cadena.substring(1), letra);
 		}
-		return orden(palabra.substring(1));
+
 	}
 
 	public static void main(String[] args) {
-		System.out.println(orden("abcd"));
-		System.out.println(orden("bcad"));
+		System.out.println(orden("abcd", 'A'));
+		System.out.println(orden("bcad", 'A'));
 	}
 }
