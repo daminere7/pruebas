@@ -12,12 +12,16 @@ public class arrayBidimensionales2 {
 			}
 		}
 
-		for (int j = 0; j < maxColumnas; j++) {
-			for (int i = 0; i < numeros.length; i++) {
-				if (j < numeros[i].length) {
-					System.out.print(numeros[i][j] + "\t");
+		for (int col = 0; col < maxColumnas; col++) {
+			System.out.println("Columna " + (col + 1) + ": ");
+			for (int fila = 0; fila < numeros.length; fila++) {
+				if (col < numeros[fila].length) {
+					System.out.print(numeros[fila][col]);
 				} else {
-					System.out.print("\t");
+					System.out.print("-");
+				}
+				if (fila < numeros.length - 1) {
+					System.out.print(", ");
 				}
 			}
 			System.out.println();
