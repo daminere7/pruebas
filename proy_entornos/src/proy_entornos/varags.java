@@ -9,7 +9,7 @@ public class varags {
 		mostrarEnteros(1,2,3);
 		System.out.println();
 		mostrarEnteros(b,a++,a*b,++b);
-
+//
 	}
 	static void mostrarEnteros(int... nums) {
 	    System.out.print("Hay " + nums.length + " enteros: ");

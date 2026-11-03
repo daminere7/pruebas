@@ -16,7 +16,7 @@ public class burbuja {
 			System.out.println("Hay cambios");
 		}
 	}
-
+//
 	public static int[] burbuja(int[] vector) {
 		int aux;
 		for (int i = 0; i < vector.length; i++) {
