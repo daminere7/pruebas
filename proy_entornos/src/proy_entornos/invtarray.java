@@ -28,7 +28,7 @@ public class invtarray {
 	}
 
 	public static void main(String[] args) {
-		imprimirTabla(matrizAleatoria(3,8));
+		imprimirTabla(matrizAleatoria(3,10));
 		
 	}
 
